@@ -1,0 +1,16 @@
+For all, independence implies COV=0 (deduction 1), but reverse, COV=0 doesn't imply independence, with two exception of Bernoulli (deduction 2) and Bivariate normal distribution (deduction 3).
+
+deduction 1:
+Known: independence, that is, f(x,y)=f(x)*f(y)
+What we want to get: E(XY)= SS xy*f(x,y) dxdy= SS xy*f(x)*f(y) dxdy= S xf(x)dx * S yf(y)dy=E(X)*E(Y)
+So that: E(XY) =E(X)*E(Y)
+
+deduction 2:
+Known: Bernoulli's COV=0, that is E(XY)=E(X)*E(Y)
+Also, we know: E(XY)=Pr(X=1,Y=1), E(X)= Pr(X=1), E(Y)=Pr(Y=1)
+So that: Pr(X=1, Y=1) =Pr(X=1)*Pr(Y=1)
+
+deduction 3:
+Known: Bivariate normal distribution, beta=0
+As known: p(x, y)= [1/(2pi*sigma1*sigma2*(1-beta^2)^0.5)]*exp(...beta...)
+So that: p(x,y)=p(x)*p(y)
